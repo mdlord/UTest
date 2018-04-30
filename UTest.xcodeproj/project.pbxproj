@@ -15,6 +15,7 @@
 		BE6DAD9A2096A5E0001FA45D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6DAD982096A5E0001FA45D /* LaunchScreen.storyboard */; };
 		BE6DADA52096A5E0001FA45D /* UTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DADA42096A5E0001FA45D /* UTestTests.swift */; };
 		BE6DADB02096A5E0001FA45D /* UTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DADAF2096A5E0001FA45D /* UTestUITests.swift */; };
+		BE6DADBE209750A1001FA45D /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DADBD209750A1001FA45D /* OptionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BE6DADAB2096A5E0001FA45D /* UTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6DADAF2096A5E0001FA45D /* UTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTestUITests.swift; sourceTree = "<group>"; };
 		BE6DADB12096A5E0001FA45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6DADBD209750A1001FA45D /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				BE6DAD8E2096A5DE001FA45D /* ViewController.swift */,
 				BE6DAD902096A5DF001FA45D /* Main.storyboard */,
 				BE6DAD962096A5E0001FA45D /* Assets.xcassets */,
+				BE6DADBD209750A1001FA45D /* OptionsViewController.swift */,
 				BE6DAD982096A5E0001FA45D /* LaunchScreen.storyboard */,
 				BE6DAD9B2096A5E0001FA45D /* Info.plist */,
 				BE6DAD932096A5DF001FA45D /* UTest.xcdatamodeld */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE6DAD8F2096A5DE001FA45D /* ViewController.swift in Sources */,
+				BE6DADBE209750A1001FA45D /* OptionsViewController.swift in Sources */,
 				BE6DAD952096A5DF001FA45D /* UTest.xcdatamodeld in Sources */,
 				BE6DAD8D2096A5DE001FA45D /* AppDelegate.swift in Sources */,
 			);
