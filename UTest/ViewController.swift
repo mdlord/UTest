@@ -19,6 +19,18 @@ class ViewController: UIViewController {
         return button
     }()
     
+    let hogwartsLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.textColor = UIColor.white
+        label.font = UIFont(name: "Copperplate-Bold", size: 50)
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 2
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Welcome to Hogwarts"
+        return label
+    }()
+    
     let containerview: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -38,6 +50,7 @@ class ViewController: UIViewController {
         
         self.view.addSubview(containerview)
         self.view.addSubview(houseimage)
+        self.view.addSubview(hogwartsLabel)
         self.view.addSubview(housebutton)
         
         setupLayout()
@@ -57,6 +70,11 @@ class ViewController: UIViewController {
         containerview.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         containerview.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
         containerview.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1).isActive = true
+        
+        hogwartsLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        hogwartsLabel.topAnchor.constraint(equalTo: containerview.bottomAnchor, constant:-75).isActive = true
+        hogwartsLabel.heightAnchor.constraint(equalTo: containerview.heightAnchor, multiplier: 0.5).isActive = true
+        hogwartsLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1).isActive = true
         
         houseimage.centerXAnchor.constraint(equalTo: containerview.centerXAnchor).isActive = true
         houseimage.centerYAnchor.constraint(equalTo: containerview.centerYAnchor).isActive = true
